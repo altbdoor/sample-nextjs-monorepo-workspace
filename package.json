@@ -1,0 +1,24 @@
+{
+  "name": "sample-nextjs-monorepo-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev-admin": "npm run dev -w admin",
+    "dev-client": "npm run dev -w client",
+    "pretty": "prettier --write \"**/*\" --ignore-unknown"
+  },
+  "dependencies": {
+    "@types/node": "20.6.0",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "next": "13.4.19",
+    "prettier": "^3.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.2.2"
+  },
+  "workspaces": [
+    "admin",
+    "client"
+  ]
+}
